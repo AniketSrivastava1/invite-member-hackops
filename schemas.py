@@ -56,7 +56,7 @@ class TeamResponse(TeamBase):
     updated_at: datetime
     members: List[MemberResponse] = []
     
-    class Config:
+    class ConfigDict:
         from_attributes = True
 
 
@@ -71,7 +71,7 @@ class TeamListResponse(BaseModel):
     member_count: int
     created_at: datetime
     
-    class Config:
+    class ConfigDict:
         from_attributes = True
 
 
@@ -94,7 +94,7 @@ class InvitationResponse(BaseModel):
     expires_at: datetime
     created_at: datetime
     
-    class Config:
+    class ConfigDict:
         from_attributes = True
 
 
